@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content with Tables</title>
+    <link rel="stylesheet" href="checklist_styles.css">
+</head>
+<body>
+    <div class="content">
+        <h1>A320 British Airways Procedures</h1>
+        <h3><u>Key</u></h3>
+        <p style="color:#5aff5a;"><strong>Pilot Flying (PF)</strong></p>
+        <p style="color:#ffff66;;"><strong>Pilot Monitoring (PM)</strong></p>
+        <p style="color:#00BFFF;;"><strong>Checklist Item</strong></p>
+    </div>
+
+    <div class="content">
+        <h3 id="plan">Flight Planning</h3>
+        <table id="item-table">
+            <tr class="pf untoggled">
+                <td onclick="toggleItemColor(this)"><b>Item 1</b></td>
+                <td onclick="toggleItemColor(this)">ON</td>
+            </tr>
+            <tr class="pm untoggled">
+                <td onclick="toggleItemColor(this)"><b>Item 2</b></td>
+                <td onclick="toggleItemColor(this)">OFF</td>
+            </tr>
+            <tr class="cl untoggled">
+                <td onclick="toggleItemColor(this)"><b>Item 3</b></td>
+                <td onclick="toggleItemColor(this)">OFF</td>
+            </tr>
+            <tr class="norm untoggled">
+                <td onclick="toggleItemColor(this)"><b>Item 4</b></td>
+                <td onclick="toggleItemColor(this)">OFF</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </table>
+    </div>
+    <script src="checklist_script.js"></script>
+</body>
+</html>
