@@ -95,3 +95,40 @@ a.button {
 a.button:hover {
     background-color: #1c86ee;
 }
+
+a.button_green {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color:rgb(1, 116, 1);
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+a.button_green:hover {
+    background-color: darkgreen;
+}
+
+a.button_red {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color:rgb(165, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+a.button_red:hover {
+    background-color: darkred;
+}
+
