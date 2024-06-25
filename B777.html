@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B777 Procedures</title>
+    <link rel="stylesheet" href="checklist_styles.css" />
+  </head>
+
+  <body>
+    <div class="content">
+      <h1>B777 Standard Procedures</h1>
+      <p style="color: #5aff5a"><strong>Pilot Flying (PF)</strong></p>
+      <p style="color: #ffff66"><strong>Pilot Monitoring (PM)</strong></p>
+      <p style="color: #00bfff"><strong>Checklist Item</strong></p>
+      <p style="color: white"><strong>* Transit Item</strong></p>
+    </div>
+
+    <div class="content">
+      <h2 id="plan">Flight Planning</h2>
+      <table id="item-table">
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)"><b>SimBrief</b></td>
+          <td onclick="toggleItemColor(this)"><b>FLIGHT PLAN</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)"><b>Network</b></td>
+          <td onclick="toggleItemColor(this)"><b>FILE FLIGHT PLAN</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)"><b>Flight Plan</b></td>
+          <td onclick="toggleItemColor(this)"><b>REVIEW</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)"><b>Charts</b></td>
+          <td onclick="toggleItemColor(this)"><b>SETUP</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)"><b>Weather</b></td>
+          <td onclick="toggleItemColor(this)"><b>REVIEW</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)"><b>NOTAMS</b></td>
+          <td onclick="toggleItemColor(this)"><b>REVIEW</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)"><b>Fuel Quantity</b></td>
+          <td onclick="toggleItemColor(this)"><b>CONFIRM</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)"><b>Pilot Client</b></td>
+          <td onclick="toggleItemColor(this)"><b>CONNECT</b></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content">
+      <h2 id="pre">Power Up & Pre-Flight FMC Setup</h2>
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Flap Handle</td>
+          <td onclick="toggleItemColor(this)"><b>VERIFY UP</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Gear Handle</td>
+          <td onclick="toggleItemColor(this)"><b>VERIFY DOWN</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Speed Brake</td>
+          <td onclick="toggleItemColor(this)"><b>VERIFY STOWED</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Fuel Ctrl Switches</td>
+          <td onclick="toggleItemColor(this)"><b>VERIFY CUTOFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Battery</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">External Power</td>
+          <td onclick="toggleItemColor(this)"><b>VERIFY AVAIL</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Primary Ext Pwr</td>
+          <td onclick="toggleItemColor(this)"><b>ON (WAIT 2 SECS)</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Secondary Ext Pwr</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Power Up</td>
+          <td onclick="toggleItemColor(this)"><b>APPROX 60s</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">ADIRU</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FMC / POS INIT</td>
+          <td onclick="toggleItemColor(this)"><b>Copy/Paste GPS->INERTIAL</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">REF AIRPORT/GATE</td>
+          <td onclick="toggleItemColor(this)"><b>ENTER/CHECK</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">EFB</td>
+          <td onclick="toggleItemColor(this)"><b>REQ DATA FROM SIMBRIEF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FMC / ROUTE</td>
+          <td onclick="toggleItemColor(this)"><b>ROUTE REQUEST</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">SIMBRIEF RTE</td>
+          <td onclick="toggleItemColor(this)"><b>SELECT</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">SET PAYLOAD/FUEL</td>
+          <td onclick="toggleItemColor(this)"><b>SELECT / OR GSX</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">SELECT RTE</td>
+          <td onclick="toggleItemColor(this)"><b>SELECT</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">LOAD</td>
+          <td onclick="toggleItemColor(this)"><b>SELECT</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">ACTIVATE</td>
+          <td onclick="toggleItemColor(this)"><b>EXEC</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FMC / PERF INIT</td>
+          <td onclick="toggleItemColor(this)"><b>ZFW / CHECK / ACCEPT</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FMC / DEP ARR</td>
+          <td onclick="toggleItemColor(this)"><b>RWY / SID / STAR / EXEC</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FMC / RTE</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK / NEXT PAGE(S)</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FMC / PROG</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK DTG V OFP</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FMC / LEGS</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK / FIX</b></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content">
+      <h2 id="overhead">Overhead</h2>
+
+      <b>Top Left to Bottom Right</b>
+
+      <br /><br />
+
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">ADIRU</td>
+          <td onclick="toggleItemColor(this)"><b>VERIFY ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">IFE/PASS SEATS</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">CABIN/UTILITY</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">EMER LIGHTS</td>
+          <td onclick="toggleItemColor(this)"><b>CLOSE COVER</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">WINDOW HEATS</td>
+          <td onclick="toggleItemColor(this)"><b>ALL x4 ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">R ELEC</td>
+          <td onclick="toggleItemColor(this)"><b>AUTO</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">BRAKE PRESSURE</td>
+          <td onclick="toggleItemColor(this)"><b>VERIFY INCREASE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FIRE/OVHT TEST</td>
+          <td onclick="toggleItemColor(this)"><b>TEST</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">NAV LIGHTS</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Logo Lights</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">IND LTS</td>
+          <td onclick="toggleItemColor(this)"><b>TEST</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">AIR COND</td>
+          <td onclick="toggleItemColor(this)"><b>VERIFY AUTO or ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">BLEED AIR</td>
+          <td onclick="toggleItemColor(this)"><b>VERIFY AUTO or ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">PRESSURIZATION</td>
+          <td onclick="toggleItemColor(this)"><b>VERIFY AUTO</b></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content">
+      <h2 id="">MCP & Pedestal</h2>
+
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Altimeters</td>
+          <td onclick="toggleItemColor(this)"><b>SET</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">EFIS</td>
+          <td onclick="toggleItemColor(this)"><b>ARPT / TFC / TERR</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FD's</td>
+          <td onclick="toggleItemColor(this)"><b>BOTH ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">HEADING</td>
+          <td onclick="toggleItemColor(this)"><b>SET RWY HDG</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">ALTITUDE</td>
+          <td onclick="toggleItemColor(this)"><b>SET INITIAL ALT</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">LNAV / VNAV</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">AUTOBRAKE</td>
+          <td onclick="toggleItemColor(this)"><b>RTO</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">TRANSPONDER</td>
+          <td onclick="toggleItemColor(this)"><b>SET SQUAWK</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">RADIOS</td>
+          <td onclick="toggleItemColor(this)"><b>TUNE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">OXYGEN</td>
+          <td onclick="toggleItemColor(this)"><b>TEST</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">CHKL</td>
+          <td onclick="toggleItemColor(this)"><b>PRE-FLIGHT</b></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content">
+      <h2 id="">Take-off Data & Pre-Start</h2>
+
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">EFB</td>
+          <td onclick="toggleItemColor(this)"><b>PERF CALC</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FMC / INIT REF</td>
+          <td onclick="toggleItemColor(this)"><b>ENTER DATA</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">THRUST LIM</td>
+          <td onclick="toggleItemColor(this)"><b>SET/SEL TEMP</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">NEXT PAGE</td>
+          <td onclick="toggleItemColor(this)"><b>AS REQ</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">INIT REF</td>
+          <td onclick="toggleItemColor(this)"><b>NOTE / SET TRIM</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">IAS</td>
+          <td onclick="toggleItemColor(this)"><b>SET V2 SPEED</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">APU</td>
+          <td onclick="toggleItemColor(this)"><b>ON/START</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">DOORS</td>
+          <td onclick="toggleItemColor(this)"><b>VERIFY CLOSED</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">APU</td>
+          <td onclick="toggleItemColor(this)"><b>ON/START</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">PRIMARY EXT PWR</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">GPU</td>
+          <td onclick="toggleItemColor(this)"><b>DISMISS</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">HYD PUMPS (ON)</td>
+          <td onclick="toggleItemColor(this)"><b>C2-ELEC C1-ELEC</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">HYD PUMPS (AUTO)</td>
+          <td onclick="toggleItemColor(this)"><b>L-ELEC C1-AIR C2-AIR</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FUEL PUMPS (L/R)</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">SEAT BELTS</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">TRANSPONDER</td>
+          <td onclick="toggleItemColor(this)"><b>XPDR</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">BEACON</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">CHKL</td>
+          <td onclick="toggleItemColor(this)"><b>BEFORE START</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">ENG PAGE</td>
+          <td onclick="toggleItemColor(this)"><b>SELECT</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">PARKING BRAKE</td>
+          <td onclick="toggleItemColor(this)"><b>SET</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">CHOCKS</td>
+          <td onclick="toggleItemColor(this)"><b>REMOVE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">EICAS</td>
+          <td onclick="toggleItemColor(this)"><b>ENG SHUTDOWN, TCAS OFF</b></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content">
+      <h2 id="p&s">Push, Start & Taxi</h2>
+
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Pushback</td>
+          <td onclick="toggleItemColor(this)"><b>COMMENCE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Engine Start</td>
+          <td onclick="toggleItemColor(this)"><b>L / R</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Flaps</td>
+          <td onclick="toggleItemColor(this)"><b>SET</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">ANTI-ICE</td>
+          <td onclick="toggleItemColor(this)"><b>AS REQ</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">APU</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">RECALL</td>
+          <td onclick="toggleItemColor(this)"><b>PRESS</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FLIGHT CONTROLS</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">CHKL</td>
+          <td onclick="toggleItemColor(this)"><b>BEFORE TAXI</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Taxi Light</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content">
+      <h2>Takeoff & Climb</h2>
+
+      <table id="item-table">
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">CHKL</td>
+          <td onclick="toggleItemColor(this)"><b>BEFORE TAKEOFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Transponder</td>
+          <td onclick="toggleItemColor(this)"><b>TA/RA</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Strobe</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Rwy Turnoff Lights</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Recall</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Thrust</td>
+          <td onclick="toggleItemColor(this)"><b>55% / TOGA</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Positive Rate</td>
+          <td onclick="toggleItemColor(this)"><b>ANNOUNCE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Gear Up</td>
+          <td onclick="toggleItemColor(this)"><b>ORDER</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">AUTO PILOT</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">ACC ALT</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK SPEED+</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FLAPS</td>
+          <td onclick="toggleItemColor(this)"><b>ORDER</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">CHKL</td>
+          <td onclick="toggleItemColor(this)"><b>AFTER TAKEOFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Trans Altitude</td>
+          <td onclick="toggleItemColor(this)"><b>SET BARO STD</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">10,000 ft</td>
+          <td onclick="toggleItemColor(this)"><b>ANNOUNCE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Landing Lights</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Taxi/Rwy Lights</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Seat Belts</td>
+          <td onclick="toggleItemColor(this)"><b>AUTO</b></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content">
+      <h2>Cruise</h2>
+
+      <table id="item-table">
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">A - Altimeter</td>
+          <td onclick="toggleItemColor(this)"><b>Hourly Readings</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">B - Boundaries</td>
+          <td onclick="toggleItemColor(this)"><b>FIR Entry/Exit Time</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">C - Collisions</td>
+          <td onclick="toggleItemColor(this)"><b>TCAS ALL</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">D - Documentation</td>
+          <td onclick="toggleItemColor(this)"><b>FP, Log Book, De-brief</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">E - ECAM</td>
+          <td onclick="toggleItemColor(this)"><b>REVIEW</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">E - Enroute</td>
+          <td onclick="toggleItemColor(this)"><b>Alternates / ETP</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">F - Fuel</td>
+          <td onclick="toggleItemColor(this)"><b>Every 30 mins</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">G - Gain & Tilt</td>
+          <td onclick="toggleItemColor(this)"><b>WX Radar</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">H - High Alt Winds</td>
+          <td onclick="toggleItemColor(this)"><b>Wind Data Check</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">I - Inflight Perf (Vert)</td>
+          <td onclick="toggleItemColor(this)"><b>Step Climbs</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">I - Inflight Perf (Lat)</td>
+          <td onclick="toggleItemColor(this)"><b>WPs / Dist / Accuracy</b></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content">
+      <h2>Descent Preparation</h2>
+
+      <table id="item-table">
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">ATIS</td>
+          <td onclick="toggleItemColor(this)"><b>OBTAIN</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">ECAM Status</td>
+          <td onclick="toggleItemColor(this)"><b>Check</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)">Charts</td>
+          <td onclick="toggleItemColor(this)"><b>PREPARE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Landing Weight</td>
+          <td onclick="toggleItemColor(this)"><b>ZFW+EFOB</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Landing Perf</td>
+          <td onclick="toggleItemColor(this)"><b>COMPUTE/XC</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Auto Brake</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">GPWS LDG FLAP 3</td>
+          <td onclick="toggleItemColor(this)"><b>IF RQRD</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">F-PLN</td>
+          <td onclick="toggleItemColor(this)"><b>DES WINDS/ARRIVAL</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">RAD NAV</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">PROG</td>
+          <td onclick="toggleItemColor(this)"><b>BRG / DIST</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FIX INFO</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">PERF / APPR</td>
+          <td onclick="toggleItemColor(this)"><b>ENTER DATA</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">PERF / GA</td>
+          <td onclick="toggleItemColor(this)"><b>TRA/ACC ALT</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FUEL PRED</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">SEC F-PLN</td>
+          <td onclick="toggleItemColor(this)"><b>ALT RUNWAY</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">ECAM</td>
+          <td onclick="toggleItemColor(this)"><b>LDG ELEV AUTO</b></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content">
+      <h2>Arrival Briefing</h2>
+
+      <table id="item-table">
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Arrival</td>
+          <td onclick="toggleItemColor(this)"><b>DESIG / ROUTING</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">MSA</td>
+          <td onclick="toggleItemColor(this)"><b>CHARTS</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">STAR</td>
+          <td onclick="toggleItemColor(this)"><b>CHARTS</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Runway/Approach Type</td>
+          <td onclick="toggleItemColor(this)"><b>CHARTS</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Minimums</td>
+          <td onclick="toggleItemColor(this)"><b>CHARTS</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Go-Around</td>
+          <td onclick="toggleItemColor(this)"><b>CHARTS</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Fuel</td>
+          <td onclick="toggleItemColor(this)"><b>EXTRA / TIME</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Guidance</td>
+          <td onclick="toggleItemColor(this)"><b>APPROACH</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Flaps</td>
+          <td onclick="toggleItemColor(this)"><b>PERF CALC</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Stop Margin</td>
+          <td onclick="toggleItemColor(this)"><b>PERF CALC</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Reverse Thrust</td>
+          <td onclick="toggleItemColor(this)"><b>PERF CALC</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Auto Brake</td>
+          <td onclick="toggleItemColor(this)"><b>PERF CALC</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Runway Exit</td>
+          <td onclick="toggleItemColor(this)"><b>CHARTS</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Hotspots Taxi-in</td>
+          <td onclick="toggleItemColor(this)"><b>CHARTS</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Special Operations</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content">
+      <h2>Descent</h2>
+
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">TCAS</td>
+          <td onclick="toggleItemColor(this)"><b>BELOW</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">MDCU</td>
+          <td onclick="toggleItemColor(this)"><b>PROG / PERF DES</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Speeds/Speed Brake</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">TERR on ND</td>
+          <td onclick="toggleItemColor(this)"><b>MSA or 10,0000 ft</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">10,000 ft</td>
+          <td onclick="toggleItemColor(this)"><b>ANNOUNCE</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Landing Lights</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Seat Belts</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">EFIS</td>
+          <td onclick="toggleItemColor(this)"><b>CSTR</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">LS</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">RAD NAV</td>
+          <td onclick="toggleItemColor(this)"><b>SELECTED/ID</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Engine Mode Selector</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">EFIS</td>
+          <td onclick="toggleItemColor(this)"><b>CSTR</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">LS</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">GPS Primary</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">NAV Accuracy</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Transition Level</td>
+          <td onclick="toggleItemColor(this)"><b>SET QNH</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">V/S (final 1000 ft)</td>
+          <td onclick="toggleItemColor(this)"><b> < 1000 ft/min</b></td>
+        </tr>
+      </table>
+
+      <p class="cl"><b>Approach Checklist</b></p>
+
+      <table id="item-table">
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">BARO REF</td>
+          <td onclick="toggleItemColor(this)"><b>____ (BOTH)</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">SEAT BELTS</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">MINIMUM</td>
+          <td onclick="toggleItemColor(this)"><b>____</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">AUTO BRAKE</td>
+          <td onclick="toggleItemColor(this)"><b>____</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">ENG MODE SEL</td>
+          <td onclick="toggleItemColor(this)"><b>____</b></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content">
+      <h2 id="approach">Approach</h2>
+
+      <a href="#ils" class="button">ILS Approach</a>
+      <br />
+      <a href="#rnav_finalapp" class="button">RNAV Final App</a>
+      <br />
+      <a href="#rnav_fpa" class="button">RNAV FPA</a>
+      <br />
+      <a href="#vor" class="button">VOR TRK/FPA</a>
+      <br />
+      <a href="#visual_straight" class="button">Visual - Straight In</a>
+      <br />
+      <a href="#visual_circling" class="button">Visual - Circling</a>
+    </div>
+
+    <div class="content">
+      <h2 id="ils">ILS Approach</h2>
+
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Approach Phase</td>
+          <td onclick="toggleItemColor(this)"><b>ACTIVATE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Localiser</td>
+          <td onclick="toggleItemColor(this)"><b>INTERCEPT COURSE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">APPR</td>
+          <td onclick="toggleItemColor(this)"><b>ARM</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">AP</td>
+          <td onclick="toggleItemColor(this)"><b>BOTH ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">LOC/GS</td>
+          <td onclick="toggleItemColor(this)"><b>MONITOR/ANNOUNCE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">3nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 1</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">GS*</td>
+          <td onclick="toggleItemColor(this)"><b>SET G/A ALTITUDE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">2000ft AGL</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 2</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">When Flaps 2</td>
+          <td onclick="toggleItemColor(this)"><b>GEAR DOWN</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Nose Light</td>
+          <td onclick="toggleItemColor(this)"><b>T.O</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Runway Turnoff Light</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Ground Spoilers</td>
+          <td onclick="toggleItemColor(this)"><b>ARM</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">ECAM WHEEL</td>
+          <td onclick="toggleItemColor(this)"><b>SELECT</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Speed Check</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 3/FULL</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Cabin Report</td>
+          <td onclick="toggleItemColor(this)"><b>MONITOR</b></td>
+        </tr>
+      </table>
+
+      <p class="cl"><b>Landing Checklist</b></p>
+
+      <table id="item-table">
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">ECAM MEMO</td>
+          <td onclick="toggleItemColor(this)"><b>LDG NO BLUE</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">CABIN</td>
+          <td onclick="toggleItemColor(this)"><b>READY</b></td>
+        </tr>
+      </table>
+
+      <br />
+
+      <table id="item-table">
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">1000 ft</td>
+          <td onclick="toggleItemColor(this)"><b>ANNOUNCE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Minimum</td>
+          <td onclick="toggleItemColor(this)"><b>CONTINUE/GA</b></td>
+        </tr>
+      </table>
+
+      <br />
+      <a href="#landing" class="button_green">Continue</a>
+      <br />
+      <a href="#go_around" class="button_red">Go-Around</a>
+    </div>
+
+    <div class="content">
+      <h2 id="rnav_finalapp">RNAV Approach - Final App Guidance</h2>
+
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Approach Phase</td>
+          <td onclick="toggleItemColor(this)"><b>ACTIVATE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Next Waypoint is FDP</td>
+          <td onclick="toggleItemColor(this)"><b>APPR ARM</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">APP NAV/FINAL</td>
+          <td onclick="toggleItemColor(this)"><b>MONITOR/ANNOUNCE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Intercept/Base</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 1</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">5nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 2</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">4nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>GEAR DOWN</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Nose Light</td>
+          <td onclick="toggleItemColor(this)"><b>T.O</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Runway Turnoff Light</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Ground Spoilers</td>
+          <td onclick="toggleItemColor(this)"><b>ARM</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">ECAM WHEEL</td>
+          <td onclick="toggleItemColor(this)"><b>SELECT</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">3nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 3</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">2nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS FULL</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FDP - FINAL APP</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK ENGAGED</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">G/A Altitude</td>
+          <td onclick="toggleItemColor(this)"><b>SET</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Cabin Report</td>
+          <td onclick="toggleItemColor(this)"><b>MONITOR</b></td>
+        </tr>
+      </table>
+
+      <p class="cl"><b>Landing Checklist</b></p>
+
+      <table id="item-table">
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">ECAM MEMO</td>
+          <td onclick="toggleItemColor(this)"><b>LDG NO BLUE</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">CABIN</td>
+          <td onclick="toggleItemColor(this)"><b>READY</b></td>
+        </tr>
+      </table>
+
+      <br />
+
+      <table id="item-table">
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">1000 ft</td>
+          <td onclick="toggleItemColor(this)"><b>ANNOUNCE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Minimum</td>
+          <td onclick="toggleItemColor(this)"><b>CONTINUE/GA</b></td>
+        </tr>
+      </table>
+
+      <br />
+      <a href="#landing" class="button_green">Continue</a>
+      <br />
+      <a href="#go_around" class="button_red">Go-Around</a>
+    </div>
+
+    <div class="content">
+      <h2 id="rnav_fpa">RNAV Approach - FPA Guidance</h2>
+
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Approach Phase</td>
+          <td onclick="toggleItemColor(this)"><b>ACTIVATE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Intecept Heading</td>
+          <td onclick="toggleItemColor(this)"><b>SET NAV / LOC</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FMA</td>
+          <td onclick="toggleItemColor(this)"><b>MONITOR/ANNOUNCE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Intercept/Base</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 1</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">TRK / FPA</td>
+          <td onclick="toggleItemColor(this)"><b>SELECT</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">5nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 2</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">4nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>GEAR DOWN</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Nose Light</td>
+          <td onclick="toggleItemColor(this)"><b>T.O</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Runway Turnoff Light</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Ground Spoilers</td>
+          <td onclick="toggleItemColor(this)"><b>ARM</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">ECAM WHEEL</td>
+          <td onclick="toggleItemColor(this)"><b>SELECT</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">3nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 3</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">2nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS FULL</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">1nm from FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FPA SET</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">0.3nm from FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FPA ENGAGE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Below G/A Altitude</td>
+          <td onclick="toggleItemColor(this)"><b>SET G/A ALTITUDE</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Cabin Report</td>
+          <td onclick="toggleItemColor(this)"><b>MONITOR</b></td>
+        </tr>
+      </table>
+
+      <p class="cl"><b>Landing Checklist</b></p>
+
+      <table id="item-table">
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">ECAM MEMO</td>
+          <td onclick="toggleItemColor(this)"><b>LDG NO BLUE</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">CABIN</td>
+          <td onclick="toggleItemColor(this)"><b>READY</b></td>
+        </tr>
+      </table>
+
+      <br />
+
+      <table id="item-table">
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">1000 ft</td>
+          <td onclick="toggleItemColor(this)"><b>ANNOUNCE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Minimum</td>
+          <td onclick="toggleItemColor(this)"><b>CONTINUE/GA</b></td>
+        </tr>
+      </table>
+
+      <br />
+      <a href="#landing" class="button_green">Continue</a>
+      <br />
+      <a href="#go_around" class="button_red">Go-Around</a>
+    </div>
+
+    <div class="content">
+      <h2 id="vor">VOR Approach - TRK/FPA</h2>
+
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Approach Phase</td>
+          <td onclick="toggleItemColor(this)"><b>ACTIVATE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Intecept Heading</td>
+          <td onclick="toggleItemColor(this)"><b>SET TRK / FPA</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">RAD/NAV (if RQRD)</td>
+          <td onclick="toggleItemColor(this)"><b>INBOUND COURSE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Rose VOR</td>
+          <td onclick="toggleItemColor(this)"><b>MONITOR</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">NAV</td>
+          <td onclick="toggleItemColor(this)"><b>MONITOR</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Green Dot Speed</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 1</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">5nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 2</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">4nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>GEAR DOWN</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Nose Light</td>
+          <td onclick="toggleItemColor(this)"><b>T.O</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Runway Turnoff Light</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Ground Spoilers</td>
+          <td onclick="toggleItemColor(this)"><b>ARM</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">ECAM WHEEL</td>
+          <td onclick="toggleItemColor(this)"><b>SELECT</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">3nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 3</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">2nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS FULL</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">1nm from FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FPA SET</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">0.3nm from FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FPA ENGAGE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Below G/A Altitude</td>
+          <td onclick="toggleItemColor(this)"><b>SET G/A ALTITUDE</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Cabin Report</td>
+          <td onclick="toggleItemColor(this)"><b>MONITOR</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">AP</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FD</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">RWY TRK</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK SET</b></td>
+        </tr>
+      </table>
+
+      <p class="cl"><b>Landing Checklist</b></p>
+
+      <table id="item-table">
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">ECAM MEMO</td>
+          <td onclick="toggleItemColor(this)"><b>LDG NO BLUE</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">CABIN</td>
+          <td onclick="toggleItemColor(this)"><b>READY</b></td>
+        </tr>
+      </table>
+
+      <br />
+
+      <table id="item-table">
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">1000 ft</td>
+          <td onclick="toggleItemColor(this)"><b>ANNOUNCE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Minimum</td>
+          <td onclick="toggleItemColor(this)"><b>CONTINUE/GA</b></td>
+        </tr>
+      </table>
+
+      <br />
+      <a href="#landing" class="button_green">Continue</a>
+      <br />
+      <a href="#go_around" class="button_red">Go-Around</a>
+      <br />
+    </div>
+
+    <div class="content">
+      <h2 id="visual_straight">Visual Approach - Straight In</h2>
+
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Approach Phase</td>
+          <td onclick="toggleItemColor(this)"><b>ACTIVATE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">ND</td>
+          <td onclick="toggleItemColor(this)"><b>ROSE NAV / 10 NM</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Green Dot Speed</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 1</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">5nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 2</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">4nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>GEAR DOWN</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Nose Light</td>
+          <td onclick="toggleItemColor(this)"><b>T.O</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Runway Turnoff Light</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Ground Spoilers</td>
+          <td onclick="toggleItemColor(this)"><b>ARM</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">ECAM WHEEL</td>
+          <td onclick="toggleItemColor(this)"><b>SELECT</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">3nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 3</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">2nm to FDP</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS FULL</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">AP</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FD's</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Bird</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Runway Track</td>
+          <td onclick="toggleItemColor(this)"><b>SET</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Cabin Report</td>
+          <td onclick="toggleItemColor(this)"><b>MONITOR</b></td>
+        </tr>
+      </table>
+
+      <p class="cl"><b>Landing Checklist</b></p>
+
+      <table id="item-table">
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">ECAM MEMO</td>
+          <td onclick="toggleItemColor(this)"><b>LDG NO BLUE</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">CABIN</td>
+          <td onclick="toggleItemColor(this)"><b>READY</b></td>
+        </tr>
+      </table>
+
+      <br />
+
+      <table id="item-table">
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">1000 ft</td>
+          <td onclick="toggleItemColor(this)"><b>ANNOUNCE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Minimum</td>
+          <td onclick="toggleItemColor(this)"><b>CONTINUE/GA</b></td>
+        </tr>
+      </table>
+
+      <br />
+      <a href="#landing" class="button_green">Continue</a>
+      <br />
+      <a href="#go_around" class="button_red">Go-Around</a>
+      <br />
+    </div>
+
+    <div class="content">
+      <h2 id="visual_circling">Visual Approach - Circling</h2>
+
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Approach Phase</td>
+          <td onclick="toggleItemColor(this)"><b>ACTIVATE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">ND</td>
+          <td onclick="toggleItemColor(this)"><b>ROSE NAV / 10 NM</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Green Dot Speed</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 1</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">AP</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FD's</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Bird</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Downwind Track</td>
+          <td onclick="toggleItemColor(this)"><b>SET</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Abeam Threshold</td>
+          <td onclick="toggleItemColor(this)"><b>TIME 45s +/- 1s wind</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Near end of Downwind</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 2</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Turning Base</td>
+          <td onclick="toggleItemColor(this)"><b>GEAR DOWN</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Nose Light</td>
+          <td onclick="toggleItemColor(this)"><b>T.O</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Runway Turnoff Light</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Ground Spoilers</td>
+          <td onclick="toggleItemColor(this)"><b>ARM</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">ECAM WHEEL</td>
+          <td onclick="toggleItemColor(this)"><b>SELECT</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">When Gear Down</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS 3</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Base</td>
+          <td onclick="toggleItemColor(this)"><b>FLAPS FULL</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Runway Track</td>
+          <td onclick="toggleItemColor(this)"><b>SET</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Cabin Report</td>
+          <td onclick="toggleItemColor(this)"><b>MONITOR</b></td>
+        </tr>
+      </table>
+
+      <p class="cl"><b>Landing Checklist</b></p>
+
+      <table id="item-table">
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">ECAM MEMO</td>
+          <td onclick="toggleItemColor(this)"><b>LDG NO BLUE</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">CABIN</td>
+          <td onclick="toggleItemColor(this)"><b>READY</b></td>
+        </tr>
+      </table>
+
+      <br />
+
+      <table id="item-table">
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">1000 ft</td>
+          <td onclick="toggleItemColor(this)"><b>ANNOUNCE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Minimum</td>
+          <td onclick="toggleItemColor(this)"><b>CONTINUE/GA</b></td>
+        </tr>
+      </table>
+
+      <br />
+      <a href="#landing" class="button_green">Continue</a>
+      <br />
+      <a href="#go_around" class="button_red">Go-Around</a>
+      <br />
+    </div>
+
+    <div class="content">
+      <h2 id="go_around">Go Around</h2>
+
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Thrust</td>
+          <td onclick="toggleItemColor(this)"><b>TO/GA</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Rotation</td>
+          <td onclick="toggleItemColor(this)"><b>PERFORM</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Go Around | Flaps</td>
+          <td onclick="toggleItemColor(this)"><b>ANNOUNCE</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Flaps</td>
+          <td onclick="toggleItemColor(this)"><b>Up 1 notch</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FMA</td>
+          <td onclick="toggleItemColor(this)"><b>ANNOUNCE</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Positive Climb</td>
+          <td onclick="toggleItemColor(this)"><b>ANNOUNCE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Gear Up</td>
+          <td onclick="toggleItemColor(this)"><b>ORDER</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">NAV / HDG</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">TRA</td>
+          <td onclick="toggleItemColor(this)"><b>THURST CL</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">ACC ALT</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK SPEED+</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">FLAPS</td>
+          <td onclick="toggleItemColor(this)"><b>ORDER</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Spoilers</td>
+          <td onclick="toggleItemColor(this)"><b>DISARM</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Nose Light</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Rwy Turnoff Light</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+      </table>
+
+      <br />
+      <a href="#approach" class="button">Approach</a>
+    </div>
+
+    <div class="content">
+      <h2 id="landing">Landing</h2>
+
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Approx 30ft</td>
+          <td onclick="toggleItemColor(this)"><b>FLARE / IDLE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Reverse</td>
+          <td onclick="toggleItemColor(this)"><b>IDLE / MAX</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Spoilers / Rev Green</td>
+          <td onclick="toggleItemColor(this)"><b>ANNOUNCE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Auto Brakes / Brakes</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Decel / No Decel</td>
+          <td onclick="toggleItemColor(this)"><b>ANNOUNCE</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">70 Knots</td>
+          <td onclick="toggleItemColor(this)"><b>ANNOUNCE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">70 Knots</td>
+          <td onclick="toggleItemColor(this)"><b>REVERSERS IDLE</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Taxi Speed</td>
+          <td onclick="toggleItemColor(this)"><b>REVERSERS STOW</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Before 20 Knots</td>
+          <td onclick="toggleItemColor(this)"><b>AUTO BRAKE DISENGAGE</b></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content">
+      <h2>After Landing</h2>
+
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Ground Spoilers</td>
+          <td onclick="toggleItemColor(this)"><b>DISARM</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Strobe</td>
+          <td onclick="toggleItemColor(this)"><b>AUTO</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Landing Lights</td>
+          <td onclick="toggleItemColor(this)"><b>RETRACT</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Nose Light</td>
+          <td onclick="toggleItemColor(this)"><b>TAXI</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Radar / PWS</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Engine Mode Selector</td>
+          <td onclick="toggleItemColor(this)"><b>NORM</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Flaps</td>
+          <td onclick="toggleItemColor(this)"><b>RETRACT (unless ICE)</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">TCAS</td>
+          <td onclick="toggleItemColor(this)"><b>STBY</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">ATC</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">APU Master</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">APU Start</td>
+          <td onclick="toggleItemColor(this)"><b>AFTER 3 SECS</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Anti Ice</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Brake Temp</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
+        </tr>
+      </table>
+
+      <p class="cl"><b>After Landing Checklist</b></p>
+
+      <table id="item-table">
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">RADAR & PRED W/S</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content">
+      <h2>Parking</h2>
+
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Nose Light</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Runway Turnoff Light</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Parking Brake</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Engine Masters 1 & 2</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Beacon</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Slides Disarmed</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Seat Belts</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Anti Ice</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">APU Bleed</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">External Power</td>
+          <td onclick="toggleItemColor(this)"><b>ON (if avail)</b></td>
+        </tr>
+
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Fuel Pumps</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">ATC</td>
+          <td onclick="toggleItemColor(this)"><b>2000/STBY</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Brake Fans</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Chocks</td>
+          <td onclick="toggleItemColor(this)"><b>CONFIRM</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Parking Brake</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+      </table>
+
+      <p class="cl"><b>Parking Checklist</b></p>
+
+      <table id="item-table">
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">PARK BRK OR CHOCKS</td>
+          <td onclick="toggleItemColor(this)"><b>SET</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">ENGINES</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">WING LIGHTS</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">FUEL PUMPS</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content">
+      <h2>Securing the Aircraft</h2>
+      <table id="item-table">
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">Parking Brake</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="pf untoggled">
+          <td onclick="toggleItemColor(this)">ADIRS 1 2 3</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">OXY CREW SUPPLY</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Exterior Lights</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Maint Bus</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">APU Bleed</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">APU Master</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">EMERG EXIT LIGHTS</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">SIGNS</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Ext Power</td>
+          <td onclick="toggleItemColor(this)"><b>AS RQRD</b></td>
+        </tr>
+        <tr class="pm untoggled">
+          <td onclick="toggleItemColor(this)">Battery 1 & 2</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+      </table>
+
+      <p class="cl"><b>Securing the Aircraft Checklist</b></p>
+
+      <table id="item-table">
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">OXYGEN</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">EMER EXIT LT</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">EFBs</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="cl untoggled">
+          <td onclick="toggleItemColor(this)">BATTERIES</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+      </table>
+
+      <br />
+      <a href="index.html" class="button">Home</a>
+    </div>
+
+    <script src="checklist_script.js"></script>
+  </body>
+</html>
