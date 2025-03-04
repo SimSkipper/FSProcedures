@@ -80,6 +80,44 @@ a:hover {
   color: #494949;
 }
 
+/* A350 Colors */
+
+#item-table tr.ohd.untoggled {
+  color: #ff0000; /* Checklist Item */
+}
+
+#item-table tr.efis.untoggled {
+  color: #ff8400; /* Checklist Item */
+}
+
+#item-table tr.fcu.untoggled {
+  color: #ffd900; /* Checklist Item */
+}
+
+#item-table tr.mfd.untoggled {
+  color: #00ffff; /* Checklist Item */
+}
+
+#item-table tr.cen.untoggled {
+  color: #15ff00; /* Checklist Item */
+}
+
+#item-table tr.ped.untoggled {
+  color: #ff00a6; /* Checklist Item */
+}
+
+#item-table tr.ecam.untoggled {
+  color: #9900ff; /* Checklist Item */
+}
+
+#item-table tr.rmp.untoggled {
+  color: #008165; /* Checklist Item */
+}
+
+#item-table tr.ois.untoggled {
+  color: #0073ff; /* Checklist Item */
+}
+
 /* Button link styles */
 a.button {
   display: inline-block;
