@@ -48,9 +48,47 @@
     </div>
 
     <div class="content">
-      <h2 id="safety">Safety Inspection</h2>
+      <h2 id="safety">Safety Exterior Inspection</h2>
 
       <table id="item-table">
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)">WHEEL CHOCKS</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)">LANDING GEAR DOORS</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)">APU AREA</td>
+          <td onclick="toggleItemColor(this)"><b>CLEAR</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)">WIPERS</td>
+          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content">
+      <h2 id="safety">Security Check</h2>
+
+      <table id="item-table">
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)"></td>
+          <td onclick="toggleItemColor(this)">F/DECK SECURITY</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)"></td>
+          <td onclick="toggleItemColor(this)">EFB SECURITY</td>
+          <td onclick="toggleItemColor(this)"><b>SECURITY</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)"></td>
+          <td onclick="toggleItemColor(this)">AIRCRAFT LIBRARY</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
+        </tr>
         <tr class="ped untoggled">
           <td onclick="toggleItemColor(this)">PED</td>
           <td onclick="toggleItemColor(this)">ENGINE MASTERS</td>
@@ -75,7 +113,7 @@
     </div>
 
     <div class="content">
-      <h2 id="elec">Electrical Power Up</h2>
+      <h2 id="elec">Batteries/External Power</h2>
 
       <table id="item-table">
         <tr class="ohd untoggled">
@@ -101,7 +139,7 @@
         <tr class="ohd untoggled">
           <td onclick="toggleItemColor(this)">OHD</td>
           <td onclick="toggleItemColor(this)">BATS V CHECK</td>
-          <td onclick="toggleItemColor(this)"><b>Ni25+ Li27+</b></td>
+          <td onclick="toggleItemColor(this)"><b>ABOVE 25V</b></td>
         </tr>
         <tr class="ohd untoggled">
           <td onclick="toggleItemColor(this)">OHD</td>
@@ -122,7 +160,7 @@
         <tr class="ped untoggled">
           <td onclick="toggleItemColor(this)">PED</td>
           <td onclick="toggleItemColor(this)">COCKPIT LIGHTS</td>
-          <td onclick="toggleItemColor(this)"><b>SET</b></td>
+          <td onclick="toggleItemColor(this)"><b>AS REQ</b></td>
         </tr>
         <tr class="cen untoggled">
           <td onclick="toggleItemColor(this)">CEN</td>
@@ -144,15 +182,25 @@
           <td onclick="toggleItemColor(this)">INIT/F-PLN REQ</td>
           <td onclick="toggleItemColor(this)"><b>INSERT / X-CHECK</b></td>
         </tr>
+        <tr class="ois untoggled">
+          <td onclick="toggleItemColor(this)">OIS</td>
+          <td onclick="toggleItemColor(this)">OPTIONS</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK EQUIPMENT</b></td>
+        </tr>
         <tr class="ecam untoggled">
           <td onclick="toggleItemColor(this)">ECAM</td>
           <td onclick="toggleItemColor(this)">RCL ALL (3 secs)</td>
           <td onclick="toggleItemColor(this)"><b>CHECK STS</b></td>
         </tr>
-        <tr class="ois untoggled">
-          <td onclick="toggleItemColor(this)">OIS</td>
-          <td onclick="toggleItemColor(this)">OPTIONS</td>
-          <td onclick="toggleItemColor(this)"><b>CHECK EQUIPMENT</b></td>
+        <tr class="ecam untoggled">
+          <td onclick="toggleItemColor(this)">ECAM</td>
+          <td onclick="toggleItemColor(this)">DISPCH</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)"></td>
+          <td onclick="toggleItemColor(this)">MEL / CDL ITEMS</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
         </tr>
         <tr class="norm untoggled">
           <td onclick="toggleItemColor(this)"></td>
@@ -271,7 +319,7 @@
         </tr>
         <tr class="norm untoggled">
           <td onclick="toggleItemColor(this)"></td>
-          <td onclick="toggleItemColor(this)">G/PINS & COVERS</td>
+          <td onclick="toggleItemColor(this)">GEAR PINS & COVERS</td>
           <td onclick="toggleItemColor(this)"><b>ONBOARD</b></td>
         </tr>
       </table>
@@ -415,11 +463,6 @@
           <td onclick="toggleItemColor(this)">ANTI SKID</td>
           <td onclick="toggleItemColor(this)"><b>ON</b></td>
         </tr>
-        <tr class="cen untoggled">
-          <td onclick="toggleItemColor(this)">CEN</td>
-          <td onclick="toggleItemColor(this)">A/BRK</td>
-          <td onclick="toggleItemColor(this)"><b>OFF</b></td>
-        </tr>
         <tr class="rmp untoggled">
           <td onclick="toggleItemColor(this)">RMP</td>
           <td onclick="toggleItemColor(this)">FREQS</td>
@@ -477,6 +520,11 @@
           <td onclick="toggleItemColor(this)">SURV / XPDR</td>
           <td onclick="toggleItemColor(this)"><b>STBY</b></td>
         </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)"></td>
+          <td onclick="toggleItemColor(this)">CHARTS</td>
+          <td onclick="toggleItemColor(this)"><b>PREPARE</b></td>
+        </tr>
         <tr class="mfd untoggled">
           <td onclick="toggleItemColor(this)">MFD</td>
           <td onclick="toggleItemColor(this)">INIT</td>
@@ -485,12 +533,12 @@
         <tr class="mfd untoggled">
           <td onclick="toggleItemColor(this)">MFD</td>
           <td onclick="toggleItemColor(this)">CRZ TEMP</td>
-          <td onclick="toggleItemColor(this)"><b>ENTER</b></td>
+          <td onclick="toggleItemColor(this)"><b>(TOC) ENTER</b></td>
         </tr>
         <tr class="mfd untoggled">
           <td onclick="toggleItemColor(this)">MFD</td>
           <td onclick="toggleItemColor(this)">TROPO</td>
-          <td onclick="toggleItemColor(this)"><b>ENTER</b></td>
+          <td onclick="toggleItemColor(this)"><b>KEEP DEFAULT</b></td>
         </tr>
         <tr class="mfd untoggled">
           <td onclick="toggleItemColor(this)">MFD</td>
@@ -539,6 +587,16 @@
         </tr>
         <tr class="mfd untoggled">
           <td onclick="toggleItemColor(this)">MFD</td>
+          <td onclick="toggleItemColor(this)">PERF</td>
+          <td onclick="toggleItemColor(this)"><b>ENTER DATA</b></td>
+        </tr>
+        <tr class="mfd untoggled">
+          <td onclick="toggleItemColor(this)">MFD</td>
+          <td onclick="toggleItemColor(this)">PERF-CLB</td>
+          <td onclick="toggleItemColor(this)"><b>THR / PRESEL</b></td>
+        </tr>
+        <tr class="mfd untoggled">
+          <td onclick="toggleItemColor(this)">MFD</td>
           <td onclick="toggleItemColor(this)">INIT-POSITION</td>
           <td onclick="toggleItemColor(this)"><b>BRG / DIST TO</b></td>
         </tr>
@@ -557,16 +615,6 @@
           <td onclick="toggleItemColor(this)">F-PLN</td>
           <td onclick="toggleItemColor(this)"><b>STEP CLIMBS</b></td>
         </tr>
-        <tr class="mfd untoggled">
-          <td onclick="toggleItemColor(this)">MFD</td>
-          <td onclick="toggleItemColor(this)">CAPT MFD</td>
-          <td onclick="toggleItemColor(this)"><b>PERF</b></td>
-        </tr>
-        <tr class="mfd untoggled">
-          <td onclick="toggleItemColor(this)">MFD</td>
-          <td onclick="toggleItemColor(this)">FO MFD</td>
-          <td onclick="toggleItemColor(this)"><b>F-PLN</b></td>
-        </tr>
       </table>
 
       <p><b>EFIS/FCU</b></p>
@@ -579,7 +627,7 @@
         </tr>
         <tr class="efis untoggled">
           <td onclick="toggleItemColor(this)">EFIS</td>
-          <td onclick="toggleItemColor(this)">CAPT</td>
+          <td onclick="toggleItemColor(this)">CAPT / FO</td>
           <td onclick="toggleItemColor(this)"><b>AS REQ</b></td>
         </tr>
         <tr class="fcu untoggled">
@@ -602,15 +650,15 @@
           <td onclick="toggleItemColor(this)">INITIAL ALT</td>
           <td onclick="toggleItemColor(this)"><b>SET</b></td>
         </tr>
-        <tr class="efis untoggled">
-          <td onclick="toggleItemColor(this)">EFIS</td>
-          <td onclick="toggleItemColor(this)">FO</td>
-          <td onclick="toggleItemColor(this)"><b>AS REQ</b></td>
-        </tr>
         <tr class="norm untoggled">
           <td onclick="toggleItemColor(this)"></td>
           <td onclick="toggleItemColor(this)">OXYGEN</td>
           <td onclick="toggleItemColor(this)"><b>TEST</b></td>
+        </tr>
+        <tr class="cen untoggled">
+          <td onclick="toggleItemColor(this)">CEN</td>
+          <td onclick="toggleItemColor(this)">PFD / ND</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK DATA</b></td>
         </tr>
         <tr class="norm untoggled">
           <td onclick="toggleItemColor(this)"></td>
@@ -699,11 +747,6 @@
       <h2 id="befor">Push / Start Procedure</h2>
 
       <table id="item-table">
-        <tr class="mfd untoggled">
-          <td onclick="toggleItemColor(this)">MFD</td>
-          <td onclick="toggleItemColor(this)">C/L MENU</td>
-          <td onclick="toggleItemColor(this)"><b>BEFORE START ---</b></td>
-        </tr>
         <tr class="norm untoggled">
           <td onclick="toggleItemColor(this)"></td>
           <td onclick="toggleItemColor(this)">BOARDING</td>
@@ -729,6 +772,16 @@
           <td onclick="toggleItemColor(this)">FUEL ON BOARD</td>
           <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
         </tr>
+        <tr class="mfd untoggled">
+          <td onclick="toggleItemColor(this)">MFD</td>
+          <td onclick="toggleItemColor(this)">CAPT MFD</td>
+          <td onclick="toggleItemColor(this)"><b>PERF</b></td>
+        </tr>
+        <tr class="mfd untoggled">
+          <td onclick="toggleItemColor(this)">MFD</td>
+          <td onclick="toggleItemColor(this)">FO MFD</td>
+          <td onclick="toggleItemColor(this)"><b>F-PLN</b></td>
+        </tr>
         <tr class="ohd untoggled">
           <td onclick="toggleItemColor(this)">OHD</td>
           <td onclick="toggleItemColor(this)">EXT 2</td>
@@ -743,6 +796,16 @@
           <td onclick="toggleItemColor(this)">OIS</td>
           <td onclick="toggleItemColor(this)">GSX</td>
           <td onclick="toggleItemColor(this)"><b>PUSHBACK</b></td>
+        </tr>
+        <tr class="mfd untoggled">
+          <td onclick="toggleItemColor(this)">MFD</td>
+          <td onclick="toggleItemColor(this)">C/L MENU</td>
+          <td onclick="toggleItemColor(this)"><b>BEFORE START ---</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)">ATC</td>
+          <td onclick="toggleItemColor(this)">P / S CLEARANCE</td>
+          <td onclick="toggleItemColor(this)"><b>OBTAIN</b></td>
         </tr>
         <tr class="ohd untoggled">
           <td onclick="toggleItemColor(this)">OHD</td>
@@ -799,11 +862,6 @@
           <td onclick="toggleItemColor(this)">PIN</td>
           <td onclick="toggleItemColor(this)"><b>SEEN</b></td>
         </tr>
-        <tr class="ecam untoggled">
-          <td onclick="toggleItemColor(this)">ECAM</td>
-          <td onclick="toggleItemColor(this)">N/W STRG DISC</td>
-          <td onclick="toggleItemColor(this)"><b>CLEARED</b></td>
-        </tr>
         <tr class="ped untoggled">
           <td onclick="toggleItemColor(this)">PED</td>
           <td onclick="toggleItemColor(this)">ENG START</td>
@@ -839,14 +897,24 @@
           <td onclick="toggleItemColor(this)">FLAPS</td>
           <td onclick="toggleItemColor(this)"><b>SET</b></td>
         </tr>
+        <tr class="cen untoggled">
+          <td onclick="toggleItemColor(this)">CEN</td>
+          <td onclick="toggleItemColor(this)">PFD TRIM</td>
+          <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
+        </tr>
         <tr class="ecam untoggled">
           <td onclick="toggleItemColor(this)">ECAM</td>
           <td onclick="toggleItemColor(this)">ECAM STS</td>
           <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
         </tr>
-        <tr class="cen untoggled">
-          <td onclick="toggleItemColor(this)">CEN</td>
-          <td onclick="toggleItemColor(this)">PFD TRIM</td>
+        <tr class="ecam untoggled">
+          <td onclick="toggleItemColor(this)">ECAM</td>
+          <td onclick="toggleItemColor(this)">N/W STRG DISC</td>
+          <td onclick="toggleItemColor(this)"><b>CLEARED</b></td>
+        </tr>
+        <tr class="ecam untoggled">
+          <td onclick="toggleItemColor(this)">ECAM</td>
+          <td onclick="toggleItemColor(this)">F/CTL</td>
           <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
         </tr>
         <tr class="mfd untoggled">
@@ -860,16 +928,7 @@
     <div class="content">
       <h2 id="taxi">Taxi</h2>
       <table id="item-table">
-        <tr class="ois untoggled">
-          <td onclick="toggleItemColor(this)">OIS</td>
-          <td onclick="toggleItemColor(this)">CHARTS</td>
-          <td onclick="toggleItemColor(this)"><b>TAXI</b></td>
-        </tr>
-        <tr class="ecam untoggled">
-          <td onclick="toggleItemColor(this)">ECAM</td>
-          <td onclick="toggleItemColor(this)">F/CTL</td>
-          <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
-        </tr>
+
         <tr class="norm untoggled">
           <td onclick="toggleItemColor(this)">ATC</td>
           <td onclick="toggleItemColor(this)">TAXI</td>
@@ -890,10 +949,20 @@
           <td onclick="toggleItemColor(this)">BRAKE CHECK</td>
           <td onclick="toggleItemColor(this)"><b>PERFORM</b></td>
         </tr>
+        <tr class="efis untoggled">
+          <td onclick="toggleItemColor(this)">EFIS</td>
+          <td onclick="toggleItemColor(this)">WX/TERR</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
         <tr class="cen untoggled">
           <td onclick="toggleItemColor(this)">CEN</td>
           <td onclick="toggleItemColor(this)">A/BRK</td>
           <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="ped untoggled">
+          <td onclick="toggleItemColor(this)">PED</td>
+          <td onclick="toggleItemColor(this)">ATC SQWK</td>
+          <td onclick="toggleItemColor(this)"><b>CONFIRM</b></td>
         </tr>
         <tr class="ecam untoggled">
           <td onclick="toggleItemColor(this)">ECAM</td>
@@ -911,30 +980,40 @@
     <div class="content">
       <h2 id="takeoff">Takeoff</h2>
       <table id="item-table">
-        <tr class="efis untoggled">
-          <td onclick="toggleItemColor(this)">EFIS</td>
-          <td onclick="toggleItemColor(this)">WX/TERR</td>
-          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)">ATC</td>
+          <td onclick="toggleItemColor(this)">LINEUP CLEARANCE</td>
+          <td onclick="toggleItemColor(this)"><b>OBTAIN</b></td>
         </tr>
         <tr class="efis untoggled">
           <td onclick="toggleItemColor(this)">EFIS</td>
           <td onclick="toggleItemColor(this)">RANGE</td>
           <td onclick="toggleItemColor(this)"><b>10</b></td>
         </tr>
-        <tr class="ois untoggled">
-          <td onclick="toggleItemColor(this)">OIS</td>
-          <td onclick="toggleItemColor(this)">CHARTS</td>
-          <td onclick="toggleItemColor(this)"><b>SID</b></td>
+        <tr class="ohd untoggled">
+          <td onclick="toggleItemColor(this)">OHD</td>
+          <td onclick="toggleItemColor(this)">STROBE</td>
+          <td onclick="toggleItemColor(this)"><b>ON</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)"></td>
+          <td onclick="toggleItemColor(this)">APPROACH PATH</td>
+          <td onclick="toggleItemColor(this)"><b>CLEAR</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)"></td>
+          <td onclick="toggleItemColor(this)">TAKEOFF RWY</td>
+          <td onclick="toggleItemColor(this)"><b>CONFIRM</b></td>
+        </tr>
+        <tr class="norm untoggled">
+          <td onclick="toggleItemColor(this)"></td>
+          <td onclick="toggleItemColor(this)">CABIN CREW</td>
+          <td onclick="toggleItemColor(this)"><b>ADVISE</b></td>
         </tr>
         <tr class="ohd untoggled">
           <td onclick="toggleItemColor(this)">OHD</td>
           <td onclick="toggleItemColor(this)">PACKS</td>
           <td onclick="toggleItemColor(this)"><b>OFF</b></td>
-        </tr>
-        <tr class="ohd untoggled">
-          <td onclick="toggleItemColor(this)">OHD</td>
-          <td onclick="toggleItemColor(this)">STROBE</td>
-          <td onclick="toggleItemColor(this)"><b>ON</b></td>
         </tr>
         <tr class="ped untoggled">
           <td onclick="toggleItemColor(this)">PED</td>
@@ -947,9 +1026,9 @@
           <td onclick="toggleItemColor(this)"><b>--- BEFORE TAKEOFF</b></td>
         </tr>
         <tr class="norm untoggled">
-          <td onclick="toggleItemColor(this)"></td>
-          <td onclick="toggleItemColor(this)">APPROACH PATH</td>
-          <td onclick="toggleItemColor(this)"><b>CHECK</b></td>
+          <td onclick="toggleItemColor(this)">ATC</td>
+          <td onclick="toggleItemColor(this)">TAKEOFF CLEARANCE</td>
+          <td onclick="toggleItemColor(this)"><b>OBTAIN</b></td>
         </tr>
         <tr class="ohd untoggled">
           <td onclick="toggleItemColor(this)">OHD</td>
@@ -978,7 +1057,7 @@
         </tr>
         <tr class="cen untoggled">
           <td onclick="toggleItemColor(this)">CEN</td>
-          <td onclick="toggleItemColor(this)">THRUST</td>
+          <td onclick="toggleItemColor(this)">THRUST RED ALT</td>
           <td onclick="toggleItemColor(this)"><b>CLIMB</b></td>
         </tr>
         <tr class="ohd untoggled">
@@ -1000,6 +1079,11 @@
           <td onclick="toggleItemColor(this)">OHD</td>
           <td onclick="toggleItemColor(this)">NOSE</td>
           <td onclick="toggleItemColor(this)"><b>OFF</b></td>
+        </tr>
+        <tr class="ohd untoggled">
+          <td onclick="toggleItemColor(this)">OHD</td>
+          <td onclick="toggleItemColor(this)">ANTI-ICE</td>
+          <td onclick="toggleItemColor(this)"><b>AS REQ</b></td>
         </tr>
         <tr class="mfd untoggled">
           <td onclick="toggleItemColor(this)">MFD</td>
@@ -1084,7 +1168,6 @@
           <td onclick="toggleItemColor(this)">F-PLAN-INFO</td>
           <td onclick="toggleItemColor(this)"><b>TIME (MARKERS)</b></td>
         </tr>
-
         <tr class="ecam untoggled">
           <td onclick="toggleItemColor(this)">ECAM</td>
           <td onclick="toggleItemColor(this)">ECAM CHECKS</td>
@@ -1269,6 +1352,11 @@
         </tr>
         <tr class="ohd untoggled">
           <td onclick="toggleItemColor(this)">OHD</td>
+          <td onclick="toggleItemColor(this)">SEAT BELTS</td>
+          <td onclick="toggleItemColor(this)"><b>ON FL200</b></td>
+        </tr>
+        <tr class="ohd untoggled">
+          <td onclick="toggleItemColor(this)">OHD</td>
           <td onclick="toggleItemColor(this)">ANTI-ICE</td>
           <td onclick="toggleItemColor(this)"><b>AS REQ</b></td>
         </tr>
@@ -1283,9 +1371,9 @@
           <td onclick="toggleItemColor(this)">LDG</td>
           <td onclick="toggleItemColor(this)"><b>ON</b></td>
         </tr>
-        <tr class="ohd untoggled">
-          <td onclick="toggleItemColor(this)">OHD</td>
-          <td onclick="toggleItemColor(this)">SEAT BELTS</td>
+        <tr class="efis untoggled">
+          <td onclick="toggleItemColor(this)">EFIS</td>
+          <td onclick="toggleItemColor(this)">CSTR</td>
           <td onclick="toggleItemColor(this)"><b>ON</b></td>
         </tr>
         <tr class="efis untoggled">
